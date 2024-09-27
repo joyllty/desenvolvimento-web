@@ -60,7 +60,18 @@ main{
 }
 #contato_form, #contato_img{
     width: 400px;
-    height: 600px;
+    height: 450px;
+    border: 1px solid brown;
+    display: inline-block;
+    margin: 20px;
+    vertical-align: top;
+    text-align: left;
+    background-color: rgb(230, 154, 154);
+    padding: 20px;
+}
+#estruturas{
+    width: 60%;
+    min-height: 300px;
     border: 1px solid brown;
     display: inline-block;
     margin: 20px;
@@ -70,7 +81,7 @@ main{
     padding: 20px;
 }
 #contato_img{
-    background-image: url(../img/carne.jpg);
+    background-image: url(../img/carne.jpg);    
     background-size: contain;
 }
 
@@ -91,4 +102,7 @@ footer{
     font-size: 150%;
     padding: 20px;
     background-color: #00FF00;
+}
+section{
+    text-align: center;
 }
