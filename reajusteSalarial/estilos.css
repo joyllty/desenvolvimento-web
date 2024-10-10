@@ -1,0 +1,19 @@
+#cs{
+    font-size: 130%;
+    padding: 20px;
+    background-color: #00FF00;
+    border-radius: 8px;
+}
+
+#cs:hover{
+    background-color: #00b33c;
+    cursor: pointer;
+}
+
+input{
+    display: block;
+    margin: 20px 0;
+    padding: 3px;
+    font-size: 15px;
+    width: 250px;
+}
