@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos e notas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Cálculos com as notas dos alunos</h1>
+        <button id="lA" onclick="listarAlunos()">Listar Alunos</button>
+        <p id="lista"></p>
+
+        <button id="maN" onclick="maiorNota()">Maior Nota</button>
+        <p id="maior"></p>
+
+        <button id="meN" onclick="menorNota()">Menor Nota</button>
+        <p id="menor"></p>
+
+        <button id="mD" onclick="calcula_media()">Calcular Média</button>
+        <p id="media"></p>
+        <br>
+
+        <p><strong>Soma</strong> das notas conforme o índice do aluno (de 0 a 4):</p>
+        <input id="ind1S" type="number" placeholder="Digite o indice do aluno">
+        <input id="ind2S" type="number" placeholder="Digite o indice do aluno">
+        <button id="so" onclick="calcula_soma()">Somar Notas</button>    
+        <p id="soma"></p>
+        <br>
+
+        <p><strong>Multiplicação</strong> das notas conforme o índice do aluno (de 0 a 4):</p>
+        <input id="ind1M" type="number" placeholder="Digite o indice do aluno">
+        <input id="ind2M" type="number" placeholder="Digite o indice do aluno">
+        <button id="multi" onclick="calcula_multi()">Multiplica Notas</button>
+        <p id="multipli"></p>
+
+        <script src="js.js"></script>
+</body>
+</html>
