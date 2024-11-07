@@ -1,0 +1,32 @@
+document.getElementById("botao").style.backgroundColo = "yellow";
+
+let o = document.querySelector('#oculta');
+o.addEventListener('click', oculta);
+
+function oculta(){
+    let v = document.querySelector('#nome').style.display;
+    if(v != "none"){
+        document.querySelector('#nome').style.display = "none"; 
+        document.querySelector('#senha').style.display = "none"; 
+        o.style.backgroundColor = '#888';
+    }
+    else{
+        document.querySelector('#nome').style.display = "inline-block"; 
+        document.querySelector('#senha').style.display = "inline-block";
+        o.style.backgroundColor = '#0f0';
+    }
+}
+
+let ac = document.getElementById("btnLiga");
+let ap = document.getElementById("btnDesliga");
+
+ac.addEventListener('click', ligar);
+ap.addEventListener('click', desligar);
+
+function ligar(){
+    document.getElementById("lampada").src="./img/acesa.png";
+}
+
+function desligar(){
+    document.getElementById("lampada").src="./img/apagada.png";
+}
