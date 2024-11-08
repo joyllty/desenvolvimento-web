@@ -30,3 +30,12 @@ function ligar(){
 function desligar(){
     document.getElementById("lampada").src="./img/apagada.png";
 }
+
+var btn = document.querySelector("#btnNumAleatorio");
+btn.addEventListener('click' , random);
+function random() {
+    let num = Number(prompt("Digite um número: "));
+    let resp = Math.floor(Math.random() * (num + 1));
+    console.log(resp);
+    return resp;
+}
